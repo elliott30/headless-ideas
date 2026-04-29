@@ -6,22 +6,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 font-sans flex flex-col">
-      <header className="flex justify-end px-6 py-4">
-        <a
-          href="https://github.com/elliott30/headless-ideas"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Star headless-ideas on GitHub"
-        >
-          <img
-            src="https://img.shields.io/github/stars/elliott30/headless-ideas?style=social&label=Star"
-            alt="GitHub stars"
-            height={20}
-          />
-        </a>
-      </header>
-
-      <div className="max-w-2xl mx-auto px-6 pb-24 pt-12 flex-1 w-full">
+      <div className="max-w-2xl mx-auto px-6 pb-24 pt-24 flex-1 w-full">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Headless Ideas</h1>
         <p className="text-xl text-zinc-500 mb-12">
           A drop-in feedback widget for web apps. Add it in 30 seconds.
@@ -51,7 +36,7 @@ export default function Home() {
           </pre>
         </section>
 
-        <section>
+        <section className="mb-12">
           <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 mb-3">
             That&apos;s it
           </h2>
@@ -61,6 +46,19 @@ export default function Home() {
             <li>No configuration — one script tag.</li>
           </ul>
         </section>
+
+        <p className="text-zinc-500 dark:text-zinc-400 text-[15px]">
+          Open source on{" "}
+          <a
+            href="https://github.com/elliott30/headless-ideas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          >
+            GitHub
+          </a>
+          .
+        </p>
       </div>
 
       <footer className="px-6 py-6 text-center">
