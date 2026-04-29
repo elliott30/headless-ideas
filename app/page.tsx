@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function Home() {
   const installPrompt = `npx headless-ideas init`;
   const snippet = `<script src="https://headless-ideas.vercel.app/widget.js"
@@ -34,6 +36,21 @@ export default function Home() {
           <pre className="bg-zinc-950 dark:bg-zinc-900 text-zinc-300 rounded-lg px-5 py-4 text-sm overflow-x-auto whitespace-pre-wrap">
             {snippet}
           </pre>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 mb-3">
+            Try it — leave feedback for this site
+          </h2>
+          <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+            This is the actual widget, running on its own marketing page.
+          </p>
+          <div id="hf-feedback" className="border border-zinc-200 dark:border-zinc-800 rounded-lg" />
+          <Script
+            src="https://headless-ideas.vercel.app/widget.js"
+            data-account="acc_lsxg1jqlvtow"
+            strategy="afterInteractive"
+          />
         </section>
 
         <section className="mb-12">
