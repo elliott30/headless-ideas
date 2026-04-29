@@ -5,8 +5,23 @@ export default function Home() {
 <div id="hf-feedback"></div>`;
 
   return (
-    <main className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 font-sans">
-      <div className="max-w-2xl mx-auto px-6 py-24">
+    <main className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 font-sans flex flex-col">
+      <header className="flex justify-end px-6 py-4">
+        <a
+          href="https://github.com/elliott30/headless-ideas"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Star headless-ideas on GitHub"
+        >
+          <img
+            src="https://img.shields.io/github/stars/elliott30/headless-ideas?style=social&label=Star"
+            alt="GitHub stars"
+            height={20}
+          />
+        </a>
+      </header>
+
+      <div className="max-w-2xl mx-auto px-6 pb-24 pt-12 flex-1 w-full">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Headless Ideas</h1>
         <p className="text-xl text-zinc-500 mb-12">
           A drop-in feedback widget for web apps. Add it in 30 seconds.
@@ -47,6 +62,15 @@ export default function Home() {
           </ul>
         </section>
       </div>
+
+      <footer className="px-6 py-6 text-center">
+        <a
+          href="https://elliott30.github.io/legal.html"
+          className="text-xs text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+        >
+          Privacy Policy & Terms
+        </a>
+      </footer>
     </main>
   );
 }
