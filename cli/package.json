@@ -4,8 +4,26 @@
   "description": "Add a feedback widget to your app in 30 seconds",
   "license": "MIT",
   "bin": {
-    "headless-ideas": "./bin/headless-ideas.js"
+    "headless-ideas": "bin/headless-ideas.js"
   },
-  "engines": { "node": ">=18" },
-  "files": ["bin"]
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliott30/headless-ideas.git"
+  },
+  "homepage": "https://github.com/elliott30/headless-ideas#readme",
+  "bugs": {
+    "url": "https://github.com/elliott30/headless-ideas/issues"
+  },
+  "keywords": [
+    "feedback",
+    "widget",
+    "claude-code"
+  ]
 }
